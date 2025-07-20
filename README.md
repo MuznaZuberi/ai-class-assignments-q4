@@ -1,44 +1,67 @@
-# 🎓 Q4 AI Class Assignments – GenAI Projects
+🤖 AI Agent Projects – Q3 Assignment (Monday 2–5)
+-------------
+This submission contains three interactive AI agents built using the OpenAI Agents SDK, leveraging tools like @function_tool and handoffs for modular and intelligent responses.
 
-Welcome to my repository for **Quarter 4 AI Class Assignments**, where I'm actively building hands-on projects focused on Generative AI using modern tools and APIs.
 
-## 📌 Project Overview
+## 📦 Contents
 
-This repository contains a series of AI-focused assignments as part of my academic coursework. Each project demonstrates practical implementations of advanced AI concepts, especially in the areas of:
+### 1. 🛒 Smart Store Agent (smart_store_agent.py)
+##### A virtual assistant designed for an e-commerce store to help users with:
+##### Viewing available categories and products
+##### Suggesting recommendations
+##### Providing prices or availability
 
-- 🤖 OpenAI SDK (Python)
-- 🛠️ Function Calling with Tools
-- 🌐 Natural Language Processing
-- ⚙️ Prompt Engineering
-- 🔄 Asynchronous Programming
+### Tech Stack:
 
-These assignments serve as a learning ground for building intelligent, interactive AI applications that understand user input and dynamically respond based on real-time context.
+##### @function_tool for store functions
 
-## 💡 What I’ve Built So Far
+##### Orchestrator agent with built-in prompt flow
 
-- **CureCompass Pharmacy Assistant** (AI-powered chatbot using OpenAI & Gemini API)
-- Function tools implementation using OpenAI SDK
-- Chainlit-based chat interfaces for user interaction
+##### Handles user queries dynamically
 
-> ⚠️ *More assignments and features will be added soon! This is an active and evolving repository.*
 
-## 🧰 Tech Stack
 
-- 🧠 OpenAI Python SDK
-- 🌐 Chainlit UI (for building conversational agents)
-- 🔐 Environment Variables for API Security
-- 🐍 Python (Async/Await)
-- 📄 Markdown + Clean Documentation
+## 2. 😊 Mood Detector Agent (mood_response_agent.py)
+##### An intelligent agent that detects user mood from input and responds empathetically.
 
-## 📚 Learning Outcomes
+##### Moods: happy, sad, angry, neutral
 
-- Building tool-enabled agents using OpenAI SDK
-- Designing structured AI workflows with real-time prompt handling
-- Using Gemini/OpenAI models for intelligent suggestions
-- Exploring AI use cases in healthcare and other domains
+##### Provides contextual replies and emotional support
 
----
+##### Uses handoff logic to map moods to the right response tool
 
-Feel free to explore, fork, or contribute as I continue expanding this repository with more assignments and deeper implementations.
+### Tools Used:
+
+##### @function_tool for mood-based responses
+
+##### Agent with handoffs for mood routing
+
+
+
+## 3. 🌍 Country Info Agent (country_info_toolkit.py)
+
+Provides details about countries using multiple tools:
+
+##### Capital city
+
+##### Official language
+
+##### Current population (with live web search)
+
+### Built With:
+
+##### @function_tool for capital, language, population
+
+##### Central Orchestrator agent with handoffs
+
+##### CLI input for user queries like “Pakistan” or “China population”
+
+
+
+## 💡 Technologies Used
+##### ✅ OpenAI Agents SDK
+##### 🔄 Handoff System
+##### 🛠 Function Tools (@function_tool)
+
 
 > Developed with curiosity and code ✨ by Muzna Amir
